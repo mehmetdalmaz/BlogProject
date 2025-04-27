@@ -1,0 +1,12 @@
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/bin/Debug/net9.0/BlogProject.Entity.deps.json
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/bin/Debug/net9.0/BlogProject.Entity.dll
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/bin/Debug/net9.0/BlogProject.Entity.pdb
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/BlogProject.Entity.csproj.AssemblyReference.cache
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/BlogProject.Entity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/BlogProject.Entity.AssemblyInfoInputs.cache
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/BlogProject.Entity.AssemblyInfo.cs
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/BlogProject.Entity.csproj.CoreCompileInputs.cache
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/BlogProject.Entity.dll
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/refint/BlogProject.Entity.dll
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/BlogProject.Entity.pdb
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/ref/BlogProject.Entity.dll

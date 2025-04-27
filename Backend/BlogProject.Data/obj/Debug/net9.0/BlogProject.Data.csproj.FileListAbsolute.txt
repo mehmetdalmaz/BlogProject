@@ -1,0 +1,17 @@
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/bin/Debug/net9.0/BlogProject.Data.deps.json
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/bin/Debug/net9.0/BlogProject.Data.runtimeconfig.json
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/bin/Debug/net9.0/BlogProject.Data.dll
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/bin/Debug/net9.0/BlogProject.Data.pdb
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/bin/Debug/net9.0/BlogProject.Entity.dll
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/bin/Debug/net9.0/BlogProject.Entity.pdb
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/BlogProject.Data.csproj.AssemblyReference.cache
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/BlogProject.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/BlogProject.Data.AssemblyInfoInputs.cache
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/BlogProject.Data.AssemblyInfo.cs
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/BlogProject.Data.csproj.CoreCompileInputs.cache
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/BlogProj.09C913BA.Up2Date
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/BlogProject.Data.dll
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/refint/BlogProject.Data.dll
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/BlogProject.Data.pdb
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/BlogProject.Data.genruntimeconfig.cache
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/ref/BlogProject.Data.dll
