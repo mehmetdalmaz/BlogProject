@@ -15,7 +15,8 @@ namespace BlogProject.Api.Mapping
     {
         public MappingProfile()
         {
-            CreateMap<Category, CreateCategoryDto>().ReverseMap();
+          
+
             CreateMap<Post, CreatePostDto>().ReverseMap();
             CreateMap<Like, CreateLikeDto>().ReverseMap();
             CreateMap<Comment, CreateCommentDto>().ReverseMap();

@@ -1,3 +1,4 @@
+using System.Reflection;
 using BlogProject.Api.Mapping;
 using BlogProject.Data.Context;
 
@@ -7,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<BlogContext>();
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddOpenApi();
 
 var app = builder.Build();

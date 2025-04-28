@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace BlogProject.Dto.CategoryDto
 {
-    public class CreateCategoryDto
+    public class UpdateCategoryDto
     {
-        public string? Name { get; set; }         
+        public int Id { get; set; }
+        public string? Name { get; set; } 
         public string? Description { get; set; } 
-
     }
 }

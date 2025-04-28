@@ -14,6 +14,17 @@ namespace BlogProject.Business.Concrete
         {
             _categorydal = categoryDal;
         }
+
+        public Category GetCategoryWithPosts(int categoryId)
+        {
+            return _categorydal.GetCategoryWithPosts(categoryId);
+        }
+
+        public List<Post> GetPostsByCategoryId(int categoryId)
+        {
+            return _categorydal.GetPostsByCategoryId(categoryId);
+        }
+
         public void TDelete(Category t)
         {
             _categorydal.Delete(t);
