@@ -15,3 +15,4 @@
 /Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/BlogProject.Data.pdb
 /Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/BlogProject.Data.genruntimeconfig.cache
 /Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/ref/BlogProject.Data.dll
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Data/obj/Debug/net9.0/BlogProject.Data.sourcelink.json

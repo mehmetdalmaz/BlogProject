@@ -10,3 +10,4 @@
 /Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/refint/BlogProject.Entity.dll
 /Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/BlogProject.Entity.pdb
 /Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/ref/BlogProject.Entity.dll
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Entity/obj/Debug/net9.0/BlogProject.Entity.sourcelink.json

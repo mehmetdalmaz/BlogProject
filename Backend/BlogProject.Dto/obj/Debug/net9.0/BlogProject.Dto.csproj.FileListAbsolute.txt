@@ -1,0 +1,12 @@
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Dto/bin/Debug/net9.0/BlogProject.Dto.deps.json
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Dto/bin/Debug/net9.0/BlogProject.Dto.dll
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Dto/bin/Debug/net9.0/BlogProject.Dto.pdb
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Dto/obj/Debug/net9.0/BlogProject.Dto.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Dto/obj/Debug/net9.0/BlogProject.Dto.AssemblyInfoInputs.cache
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Dto/obj/Debug/net9.0/BlogProject.Dto.AssemblyInfo.cs
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Dto/obj/Debug/net9.0/BlogProject.Dto.csproj.CoreCompileInputs.cache
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Dto/obj/Debug/net9.0/BlogProject.Dto.sourcelink.json
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Dto/obj/Debug/net9.0/BlogProject.Dto.dll
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Dto/obj/Debug/net9.0/refint/BlogProject.Dto.dll
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Dto/obj/Debug/net9.0/BlogProject.Dto.pdb
+/Users/mehmetdalmaz/Desktop/BlogProject/Backend/BlogProject.Dto/obj/Debug/net9.0/ref/BlogProject.Dto.dll
