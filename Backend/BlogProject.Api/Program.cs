@@ -1,9 +1,13 @@
+using BlogProject.Api.Mapping;
+using BlogProject.Data.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddDbContext<BlogContext>();
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
