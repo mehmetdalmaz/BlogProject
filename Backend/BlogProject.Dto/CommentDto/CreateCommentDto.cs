@@ -9,6 +9,6 @@ namespace BlogProject.Dto.CommentDto
     {
         public string? Content { get; set; } // Yorum içeriği
         public int PostId { get; set; }     // Hangi yazıya yapıldığı
-        public int UserId { get; set; }     // Yorumu yapan kullanıcı (Opsiyonel olabilir, JWT'den alınabilir)
+        public Guid UserId { get; set; }     // Yorumu yapan kullanıcı (Opsiyonel olabilir, JWT'den alınabilir)
     }
 }

@@ -8,14 +8,13 @@ namespace BlogProject.Entity.Models
     public class Post
     {
         public int Id { get; set; }
-        public string? Title { get; set; } // Yazı başlığı
-        public string? Content { get; set; } // Yazı içeriği
-        public DateTime CreatedAt { get; set; } // Yazı oluşturulma tarihi
-        public int UserId { get; set; } // Yazıyı yazan kullanıcı
-        public AppUser? User { get; set; } // Kullanıcıya ilişkin bilgi
-                                           // Kategoriye ait ilişki
+        public string? Title { get; set; } 
+        public string? Content { get; set; } 
+        public DateTime CreatedAt { get; set; } 
+        public Guid UserId { get; set; } 
+        public AppUser? User { get; set; } 
         public int CategoryId { get; set; }
-        public Category? Category { get; set; } // Kategori referansı
+        public Category? Category { get; set; } 
 
         // Yorumlar ve beğeniler
         public ICollection<Comment>? Comments { get; set; }

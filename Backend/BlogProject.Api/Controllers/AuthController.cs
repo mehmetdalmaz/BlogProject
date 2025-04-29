@@ -31,12 +31,14 @@ namespace BlogProject.Api.Controllers
             _roleManager = roleManager;
             _configuration = configuration;
         }
+
         [HttpGet("get-all-users")]
         public IActionResult GetAllUsers()
         {
             var users = _userManager.Users.ToList();
             return Ok(users);
         }
+
         [HttpDelete("delete-user/{username}")]
         public async Task<IActionResult> DeleteUser(string username)
         {
@@ -57,7 +59,6 @@ namespace BlogProject.Api.Controllers
             return Ok(new { message = "Kullanıcı başarıyla silindi." });
         }
 
-
         [HttpPost("register")]
         public IActionResult Register(RegsiterDto regsiterDto)
         {
@@ -70,7 +71,6 @@ namespace BlogProject.Api.Controllers
                 UserName = regsiterDto.Username,
                 FullName = regsiterDto.FullName,
                 Email = regsiterDto.Email
-
             };
             var result = _userManager.CreateAsync(user, regsiterDto.Password).GetAwaiter().GetResult();
 
@@ -78,6 +78,7 @@ namespace BlogProject.Api.Controllers
             {
                 return BadRequest(result.Errors);
             }
+
             if (!_roleManager.RoleExistsAsync("User").GetAwaiter().GetResult())
             {
                 _roleManager.CreateAsync(new AppRole { Name = "User" }).GetAwaiter().GetResult();
@@ -86,10 +87,10 @@ namespace BlogProject.Api.Controllers
             _userManager.AddToRoleAsync(user, "User").GetAwaiter().GetResult();
 
             return Ok(new { message = "Kullanıcı başarıyla oluşturuldu." });
-
         }
+
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginDto loginDto)
+        public IActionResult Login( LoginDto loginDto)
         {
             if (string.IsNullOrEmpty(loginDto.Username))
             {
@@ -118,22 +119,35 @@ namespace BlogProject.Api.Controllers
                 return Unauthorized("Kullanıcı adı geçersiz.");
             }
 
+            // Claims oluşturma
             var claims = new List<Claim>
-    {
-        new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
-        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-        new Claim(ClaimTypes.NameIdentifier, user.Id)
-    };
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            };
 
+            // UserId formatını kontrol et
+            if (!Guid.TryParse(user.Id, out var userIdGuid))
+            {
+                return Unauthorized("Geçersiz UserId formatı.");
+            }
+
+            claims.Add(new Claim("UserId", userIdGuid.ToString()));
+
+            // Kullanıcı rolünü de ekle (Opsiyonel)
+            claims.Add(new Claim(ClaimTypes.Role, "User"));
+
+            // SecretKey doğrulama
             var secretKey = _configuration["JWTSecurity:SecretKey"];
             if (string.IsNullOrEmpty(secretKey))
             {
                 throw new Exception("JWT SecretKey ayarı bulunamadı.");
             }
 
-            var key = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)); // UTF8 kullanıldı
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
+            // Token oluşturma
             var token = new JwtSecurityToken(
                 issuer: _configuration["JWTSecurity:Issuer"],
                 audience: _configuration["JWTSecurity:Audience"],
@@ -142,9 +156,8 @@ namespace BlogProject.Api.Controllers
                 signingCredentials: creds
             );
 
+            // Token'ı döndürme
             return Ok(new TokenResponseDto { Token = new JwtSecurityTokenHandler().WriteToken(token) });
         }
-
-
     }
 }

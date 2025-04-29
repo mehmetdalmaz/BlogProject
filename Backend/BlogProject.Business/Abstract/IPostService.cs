@@ -6,8 +6,13 @@ using BlogProject.Entity.Models;
 
 namespace BlogProject.Data.Abstract
 {
-    public interface IPostService:IGenericService<Post>
+    public interface IPostService : IGenericService<Post>
     {
-        
+        List<Post> GetPostsByCategory(int categoryId);
+        List<Post> GetPostsByUser(Guid userId);
+        List<Post> SearchPosts(string keyword);
+        List<Post> GetPopularPosts();
+        List<Post> GetRecentPosts(DateTime afterDate);
+        List<Post> GetMostCommentedPosts();
     }
 }

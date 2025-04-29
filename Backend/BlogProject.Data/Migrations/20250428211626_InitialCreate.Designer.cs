@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogProject.Data.Migrations
 {
     [DbContext(typeof(BlogContext))]
-    [Migration("20250428132643_UpdateIdentityWithAppRole")]
-    partial class UpdateIdentityWithAppRole
+    [Migration("20250428211626_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -159,8 +159,8 @@ namespace BlogProject.Data.Migrations
                     b.Property<int>("PostId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("UserId1")
                         .HasColumnType("nvarchar(450)");
@@ -185,8 +185,8 @@ namespace BlogProject.Data.Migrations
                     b.Property<int>("PostId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("UserId1")
                         .HasColumnType("nvarchar(450)");
@@ -220,8 +220,8 @@ namespace BlogProject.Data.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("UserId1")
                         .HasColumnType("nvarchar(450)");

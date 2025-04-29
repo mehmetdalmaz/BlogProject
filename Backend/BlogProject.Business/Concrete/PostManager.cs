@@ -11,6 +11,37 @@ namespace BlogProject.Business.Concrete
         {
             _Postdal = PostDal;
         }
+
+        public List<Post> GetMostCommentedPosts()
+        {
+            return _Postdal.GetMostCommentedPosts();
+        }
+
+        public List<Post> GetPopularPosts()
+        {
+            return _Postdal.GetPopularPosts();
+        }
+
+        public List<Post> GetPostsByCategory(int categoryId)
+        {
+            return _Postdal.GetPostsByCategory(categoryId);
+        }
+
+        public List<Post> GetPostsByUser(Guid userId)
+        {
+            return _Postdal.GetPostsByUser(userId);
+        }
+
+        public List<Post> GetRecentPosts(DateTime afterDate)
+        {
+            return _Postdal.GetRecentPosts(afterDate);
+        }
+
+        public List<Post> SearchPosts(string keyword)
+        {
+            return _Postdal.SearchPosts(keyword);
+        }
+
         public void TDelete(Post t)
         {
             _Postdal.Delete(t);

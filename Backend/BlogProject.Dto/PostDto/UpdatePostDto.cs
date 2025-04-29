@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 
 namespace BlogProject.Dto.PostDto
 {
-    public class CreatePostDto
+    public class UpdatePostDto
     {
+        public int Id { get; set; }
         public string? Title { get; set; }
         public string? Content { get; set; }
-        public int CategoryId { get; set; }
         public Guid UserId { get; set; }
-
     }
 }

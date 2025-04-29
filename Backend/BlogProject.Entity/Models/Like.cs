@@ -10,7 +10,7 @@ namespace BlogProject.Entity.Models
         public int Id { get; set; }
         public int PostId { get; set; } // Beğenilen yazı
         public Post? Post { get; set; } // Yazıya ait referans
-        public int UserId { get; set; } // Beğeni yapan kullanıcı
+        public Guid UserId { get; set; } // Beğeni yapan kullanıcı
         public AppUser? User { get; set; } // Kullanıcıya ait referans
     }
 }

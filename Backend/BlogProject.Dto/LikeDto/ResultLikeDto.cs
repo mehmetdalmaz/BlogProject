@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace BlogProject.Dto.LikeDto
 {
-    public class CreateLikeDto
+    public class ResultLikeDto
     {
-
+        public int Id { get; set; }
         public int PostId { get; set; } // Beğenilen yazı
         public Guid UserId { get; set; } // Beğeni yapan kullanıcı
     }
